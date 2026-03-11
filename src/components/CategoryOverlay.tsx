@@ -15,15 +15,14 @@ export default function CategoryOverlay({ category, onClose }: CategoryOverlayPr
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
+      // Allow escape to close the overlay if lightbox is not open
       if (e.key === 'Escape' && lightboxIndex === null) {
         onClose();
       }
     };
     window.addEventListener('keydown', handleEscape);
-    document.body.style.overflow = 'hidden';
     return () => {
       window.removeEventListener('keydown', handleEscape);
-      document.body.style.overflow = '';
     };
   }, [onClose, lightboxIndex]);
 
@@ -40,103 +39,126 @@ export default function CategoryOverlay({ category, onClose }: CategoryOverlayPr
   };
 
   return (
-    <>
+    <div>
+      {/* Header section with back button */}
       <div
         style={{
-          position: 'fixed',
-          inset: 0,
-          zIndex: 100,
-          background: '#000000',
-          overflowY: 'auto',
-          animation: 'fadeIn 0.32s ease',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: '48px',
         }}
       >
-        <div
+        <button
+          onClick={onClose}
+          aria-label="Go back"
           style={{
-            position: 'sticky',
-            top: 0,
-            zIndex: 101,
-            background: 'rgba(0, 0, 0, 0.95)',
-            backdropFilter: 'blur(12px)',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
-            padding: '20px 24px',
             display: 'flex',
             alignItems: 'center',
-            gap: '16px',
+            gap: '8px',
+            color: 'var(--text-primary)',
+            fontSize: '16px',
+            fontWeight: 600,
+            background: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+            padding: '8px 12px',
+            marginLeft: '-12px',
+            borderRadius: '8px',
+            transition: 'all 0.2s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = 'var(--accent)';
+            e.currentTarget.style.background = 'rgba(0,0,0,0.05)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'var(--text-primary)';
+            e.currentTarget.style.background = 'transparent';
           }}
         >
-          <button
-            onClick={onClose}
-            aria-label="Go back"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              color: '#FFFFFF',
-              fontSize: '15px',
-              fontWeight: 600,
-              transition: 'color 0.22s ease',
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = '#FFFFFF')}
-          >
-            <ArrowLeft size={20} />
-            Back
-          </button>
-          <h2
-            style={{
-              color: '#FFFFFF',
-              fontSize: '24px',
-              fontWeight: 700,
-              margin: 0,
-            }}
-          >
+          <ArrowLeft size={20} />
+          <span className="hidden sm:inline">Back to Photos</span>
+          <span className="sm:hidden">Back</span>
+        </button>
+
+        <div style={{ textAlign: 'right' }}>
+          <h2 style={{ fontSize: '32px', fontWeight: 700, margin: 0, color: 'var(--text-primary)' }}>
             {category.name}
           </h2>
+          <p style={{ color: 'var(--text-muted)', margin: '4px 0 0', fontSize: '15px' }}>
+            {category.images.length} Photos
+          </p>
         </div>
+      </div>
 
-        <div
-          style={{
-            padding: '24px',
-            columnCount: 1,
-            columnGap: '3px',
-          }}
-          className="sm:columns-2 md:columns-3 lg:columns-4"
-        >
-          {category.images.map((image, index) => (
-            <div
-              key={index}
-              onClick={() => setLightboxIndex(index)}
+      {/* Instagram style grid */}
+      <div
+        className="photo-grid"
+        style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: '12px',
+          width: '100%',
+        }}
+      >
+        <style>{`
+          @media (max-width: 768px) {
+            .photo-grid {
+              gap: 4px !important;
+            }
+          }
+        `}</style>
+        {category.images.map((image, index) => (
+          <div
+            key={index}
+            onClick={() => setLightboxIndex(index)}
+            style={{
+              width: '100%',
+              aspectRatio: '1 / 1',
+              position: 'relative',
+              overflow: 'hidden',
+              cursor: 'pointer',
+              background: '#f0f0f0',
+              opacity: 0,
+              animation: `fadeIn 0.5s ease forwards ${index * 0.05}s`,
+            }}
+            onMouseEnter={(e) => {
+              const img = e.currentTarget.querySelector('img');
+              if (img) img.style.transform = 'scale(1.05)';
+              const overlay = e.currentTarget.querySelector('.hover-overlay') as HTMLElement;
+              if (overlay) overlay.style.opacity = '1';
+            }}
+            onMouseLeave={(e) => {
+              const img = e.currentTarget.querySelector('img');
+              if (img) img.style.transform = 'scale(1)';
+              const overlay = e.currentTarget.querySelector('.hover-overlay') as HTMLElement;
+              if (overlay) overlay.style.opacity = '0';
+            }}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
               style={{
-                breakInside: 'avoid',
-                marginBottom: '3px',
-                cursor: 'pointer',
-                position: 'relative',
-                overflow: 'hidden',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block',
+                transition: 'transform 0.4s ease',
+              }}
+            />
+            <div
+              className="hover-overlay"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'rgba(0,0,0,0.2)',
                 opacity: 0,
-                animation: `fadeSlideUp 0.5s ease forwards ${index * 0.04}s`,
+                transition: 'opacity 0.3s ease',
+                pointerEvents: 'none',
               }}
-              onMouseEnter={(e) => {
-                const img = e.currentTarget.querySelector('img');
-                if (img) img.style.filter = 'brightness(0.7)';
-              }}
-              onMouseLeave={(e) => {
-                const img = e.currentTarget.querySelector('img');
-                if (img) img.style.filter = 'brightness(1)';
-              }}
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                style={{
-                  width: '100%',
-                  display: 'block',
-                  transition: 'filter 0.25s ease',
-                }}
-              />
-            </div>
-          ))}
-        </div>
+            />
+          </div>
+        ))}
       </div>
 
       {lightboxIndex !== null && (
@@ -148,6 +170,6 @@ export default function CategoryOverlay({ category, onClose }: CategoryOverlayPr
           onNext={handleNext}
         />
       )}
-    </>
+    </div>
   );
 }

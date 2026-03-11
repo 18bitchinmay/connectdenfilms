@@ -28,7 +28,7 @@ export default function Hero() {
         <>
           <iframe
             src={ytBgEmbed(siteData.hero.backgroundYouTubeId)}
-            allow="autoplay; fullscreen; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             style={{
               position: 'absolute',
               top: '50%',

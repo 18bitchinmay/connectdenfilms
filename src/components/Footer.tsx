@@ -115,6 +115,20 @@ export default function Footer() {
                   {item}
                 </a>
               ))}
+              <a
+                href="https://drive.google.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: '15px',
+                  color: '#999999',
+                  transition: 'color 0.22s ease',
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = '#999999')}
+              >
+                Full Portfolio
+              </a>
             </div>
           </div>
 

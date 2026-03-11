@@ -1,8 +1,53 @@
 import * as Icons from 'lucide-react';
-import siteData from '../../data/site.json';
+import ScrollStack, { ScrollStackItem } from "./ScrollStack";
+
+const services = [
+  {
+    id: "s1",
+    title: "Cinematic Filmmaking",
+    description: "Full-service film production from concept to delivery. We craft visual stories that resonate and inspire.",
+    icon: "Film",
+    image: "/images/services/cinematics.jpg",
+  },
+  {
+    id: "s2",
+    title: "Event Coverage",
+    description: "Comprehensive event documentation with multi-camera setups. Capture every moment that matters.",
+    icon: "Calendar",
+    image: "/images/services/events.jpg",
+  },
+  {
+    id: "s3",
+    title: "Social Media Content",
+    description: "Platform-optimized short-form content that drives engagement. Reels, stories, and viral-ready videos.",
+    icon: "Smartphone",
+    image: "/images/services/social.jpg",
+  },
+  {
+    id: "s4",
+    title: "Corporate Productions",
+    description: "Professional corporate videos, training content, and internal communications that elevate your brand.",
+    icon: "Briefcase",
+    image: "/images/services/corporate.jpg",
+  },
+  {
+    id: "s5",
+    title: "Brand Films",
+    description: "Authentic storytelling that captures your brand's essence. Strategic narratives that connect with audiences.",
+    icon: "Heart",
+    image: "/images/services/brand.jpg",
+  },
+  {
+    id: "s6",
+    title: "Commercials & Ads",
+    description: "High-impact advertising content for digital and broadcast. Creative concepts that convert viewers to customers.",
+    icon: "Video",
+    image: "/images/services/commercial.jpg",
+  }
+];
 
 const getIcon = (iconName: string) => {
-  const Icon = (Icons as Record<string, React.ComponentType<{ size: number }>>)[iconName];
+  const Icon = (Icons as unknown as Record<string, React.ComponentType<{ size: number, className?: string }>>)[iconName];
   return Icon || Icons.Film;
 };
 
@@ -45,74 +90,31 @@ export default function ServicesGrid() {
           </p>
         </div>
 
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '20px',
-          }}
-        >
-          {siteData.services.map((service) => {
+        <ScrollStack>
+          {services.map((service) => {
             const IconComponent = getIcon(service.icon);
             return (
-              <div
+              <ScrollStackItem
                 key={service.id}
-                style={{
-                  background: '#FFFFFF',
-                  borderRadius: '16px',
-                  padding: '32px',
-                  boxShadow: 'var(--shadow-card)',
-                  transition: 'all 0.25s ease',
-                  borderLeft: '3px solid transparent',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = 'var(--shadow-hover)';
-                  e.currentTarget.style.borderLeftColor = 'var(--accent)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = 'var(--shadow-card)';
-                  e.currentTarget.style.borderLeftColor = 'transparent';
-                }}
+                itemClassName="text-white"
+                image={service.image}
+                overlayOpacity={0.6}
               >
-                <div
-                  style={{
-                    width: '56px',
-                    height: '56px',
-                    borderRadius: '12px',
-                    background: 'var(--accent)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginBottom: '20px',
-                  }}
-                >
-                  <IconComponent size={28} color="#FFFFFF" />
+                <div className="flex flex-col items-center text-center p-12 md:p-20">
+                  <div className="mb-8" style={{ color: 'var(--accent)' }}>
+                    <IconComponent size={56} />
+                  </div>
+                  <h3 className="text-3xl md:text-4xl font-semibold mb-6">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-200 max-w-xl text-lg md:text-xl leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
-                <h3
-                  style={{
-                    fontSize: '20px',
-                    fontWeight: 700,
-                    marginBottom: '12px',
-                    color: 'var(--text-primary)',
-                  }}
-                >
-                  {service.title}
-                </h3>
-                <p
-                  style={{
-                    fontSize: '15px',
-                    lineHeight: '1.6',
-                    color: 'var(--text-muted)',
-                  }}
-                >
-                  {service.description}
-                </p>
-              </div>
+              </ScrollStackItem>
             );
           })}
-        </div>
+        </ScrollStack>
       </div>
     </section>
   );
