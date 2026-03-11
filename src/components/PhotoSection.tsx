@@ -15,24 +15,22 @@ export default function PhotoSection() {
         }}
       >
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ marginBottom: '64px', maxWidth: '800px' }}>
+          <div style={{ marginBottom: '64px', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '16px', color: 'var(--accent)' }}>
+              Photos
+            </h2>
             <p
               style={{
-                fontSize: '11px',
+                fontSize: '20px',
                 fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                color: 'var(--accent)',
-                marginBottom: '16px',
+                color: '#000000',
+                fontFamily: 'Montserrat, sans-serif',
+                margin: '0 0 16px',
               }}
             >
-              01 — PHOTO GALLERY
+              Photo Gallery
             </p>
-            <h2 style={{ marginBottom: '16px' }}>
-              Photo{' '}
-              <span style={{ color: 'var(--accent)' }}>Gallery</span>
-            </h2>
-            <p style={{ fontSize: '16px', color: 'var(--text-faint)' }}>
+            <p style={{ fontSize: '16px', color: 'var(--text-faint)', margin: 0 }}>
               Explore our diverse portfolio of photography work across multiple categories
             </p>
           </div>

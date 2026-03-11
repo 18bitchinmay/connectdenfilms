@@ -1,4 +1,3 @@
-import { ArrowRight } from 'lucide-react';
 import siteData from '../../data/site.json';
 
 export default function AboutSection() {

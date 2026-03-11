@@ -59,7 +59,7 @@ export default function Navbar() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            height: '72px',
+            height: '80px',
           }}
         >
           <a
@@ -69,16 +69,20 @@ export default function Navbar() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             style={{
-              fontSize: '22px',
-              fontWeight: 800,
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
-              color: 'var(--text-primary)',
-              transition: 'color 0.22s ease',
+              display: 'flex',
+              alignItems: 'center',
+              textDecoration: 'none',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
           >
-            {siteData.company.name}
+            <img
+              src="/hero/cdflogo.png"
+              alt={`${siteData.company.name} Logo`}
+              style={{
+                height: '76px',
+                width: 'auto',
+                objectFit: 'contain'
+              }}
+            />
           </a>
 
           <div

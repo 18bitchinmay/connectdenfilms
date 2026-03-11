@@ -84,24 +84,22 @@ export default function CinematicsCarousel() {
         }}
       >
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ marginBottom: '64px', maxWidth: '800px' }}>
+          <div style={{ marginBottom: '64px', textAlign: 'center' }}>
+            <h2 style={{ marginBottom: '16px', color: 'var(--accent)' }}>
+              Cinematics
+            </h2>
             <p
               style={{
-                fontSize: '11px',
+                fontSize: '20px',
                 fontWeight: 600,
-                letterSpacing: '0.15em',
-                textTransform: 'uppercase',
-                color: 'var(--accent)',
-                marginBottom: '16px',
+                color: '#000000',
+                fontFamily: 'Montserrat, sans-serif',
+                margin: '0 0 16px',
               }}
             >
-              03 — CINEMATICS
+              Cinematic Films
             </p>
-            <h2 style={{ marginBottom: '16px' }}>
-              Cinematic{' '}
-              <span style={{ color: 'var(--accent)' }}>Films</span>
-            </h2>
-            <p style={{ fontSize: '16px', color: 'var(--text-faint)' }}>
+            <p style={{ fontSize: '16px', color: 'var(--text-faint)', margin: 0 }}>
               Long-form storytelling with cinematic depth and production value
             </p>
           </div>

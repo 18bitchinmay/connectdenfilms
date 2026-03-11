@@ -3,7 +3,7 @@ import siteData from '../../data/site.json';
 import { ytBgEmbed } from '../utils/youtube';
 
 export default function Hero() {
-  const hasVideoBackground = siteData.hero.backgroundYouTubeId !== '';
+  const hasVideoBackground = Boolean(siteData.hero.backgroundYouTubeId);
   const words = siteData.company.headline.split(' ');
   const lastWord = words.pop();
   const headlineStart = words.join(' ');
@@ -28,20 +28,21 @@ export default function Hero() {
         <>
           <iframe
             src={ytBgEmbed(siteData.hero.backgroundYouTubeId)}
+            allow="autoplay; fullscreen; picture-in-picture"
             style={{
               position: 'absolute',
               top: '50%',
               left: '50%',
-              width: '100vw',
-              height: '100vh',
-              minWidth: '177.77vh',
-              minHeight: '56.25vw',
               transform: 'translate(-50%, -50%)',
+              width: '100vw',
+              height: '56.25vw', // 16:9 aspect ratio
+              minHeight: '100vh',
+              minWidth: '177.77vh', // 16:9 aspect ratio
               pointerEvents: 'none',
+              zIndex: 0,
               border: 'none',
+              opacity: 0.8,
             }}
-            allow="autoplay; mute"
-            title="Background video"
           />
           <div
             style={{
