@@ -1,0 +1,214 @@
+{
+  "company": {
+    "name": "Framecraft Studios",
+    "tagline": "Transforming moments into timeless visual stories",
+    "headline": "Crafting cinematic experiences for brands, events & creative visions",
+    "subheading": "Award-winning video production studio. We create what captivates.",
+    "logo": "/logo.svg",
+    "email": "hello@framecraft.studio",
+    "phone": "+1 (555) 123-4567",
+    "address": "142 Creative District, Los Angeles, CA 90028",
+    "primaryColor": "#DC2626",
+    "hoverColor": "#B91C1C",
+    "officeHours": {
+      "weekdays": "Monday–Friday: 9:00 AM – 6:00 PM",
+      "saturday": "Saturday: 10:00 AM – 4:00 PM",
+      "sunday": "Sunday: Closed"
+    },
+    "social": {
+      "instagram": "https://instagram.com/framecraft",
+      "youtube": "https://youtube.com/@framecraft",
+      "whatsapp": "",
+      "facebook": ""
+    },
+    "nav": ["Home", "Work", "Services", "About", "Contact"],
+    "copyrightYear": "2026"
+  },
+
+  "hero": {
+    "ctaPrimary": { "label": "View Our Work", "href": "#portfolio" },
+    "ctaSecondary": { "label": "Get In Touch", "href": "#contact" },
+    "backgroundYouTubeId": ""
+  },
+
+  "portfolio": {
+    "photos": {
+      "categories": [
+        {
+          "slug": "commercial",
+          "name": "Commercial",
+          "coverImage": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "images": [
+            { "src": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Commercial shoot setup" },
+            { "src": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Product photography" },
+            { "src": "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Brand shoot" },
+            { "src": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Studio lighting" },
+            { "src": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Professional camera gear" },
+            { "src": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Cinema camera" }
+          ]
+        },
+        {
+          "slug": "events",
+          "name": "Events",
+          "coverImage": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "images": [
+            { "src": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Concert event" },
+            { "src": "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Live performance" },
+            { "src": "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Conference stage" },
+            { "src": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Corporate event" },
+            { "src": "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Festival crowd" }
+          ]
+        },
+        {
+          "slug": "lifestyle",
+          "name": "Lifestyle",
+          "coverImage": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "images": [
+            { "src": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Lifestyle portrait" },
+            { "src": "https://images.pexels.com/photos/1262304/pexels-photo-1262304.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Urban lifestyle" },
+            { "src": "https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Outdoor lifestyle" },
+            { "src": "https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Fashion lifestyle" },
+            { "src": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Creative portrait" },
+            { "src": "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Editorial shoot" }
+          ]
+        },
+        {
+          "slug": "production",
+          "name": "Production",
+          "coverImage": "https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "images": [
+            { "src": "https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Film production set" },
+            { "src": "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Behind the scenes" },
+            { "src": "https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Camera operator" },
+            { "src": "https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Film crew" },
+            { "src": "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1200", "alt": "Studio production" }
+          ]
+        }
+      ]
+    },
+
+    "reels": [
+      {
+        "id": "r1",
+        "title": "Urban Energy",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Fast-paced city lifestyle reel",
+        "category": "Lifestyle"
+      },
+      {
+        "id": "r2",
+        "title": "Product Showcase",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Sleek product reveal",
+        "category": "Commercial"
+      },
+      {
+        "id": "r3",
+        "title": "Event Highlights",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Dynamic event coverage",
+        "category": "Events"
+      },
+      {
+        "id": "r4",
+        "title": "Brand Story",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Authentic brand narrative",
+        "category": "Commercial"
+      },
+      {
+        "id": "r5",
+        "title": "Creative Process",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Behind the scenes creative",
+        "category": "Production"
+      },
+      {
+        "id": "r6",
+        "title": "Motion Graphics",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Animated brand elements",
+        "category": "Commercial"
+      }
+    ],
+
+    "cinematics": [
+      {
+        "id": "c1",
+        "title": "Innovation Summit 2025",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Full event coverage and highlights",
+        "duration": "4:32",
+        "category": "Events"
+      },
+      {
+        "id": "c2",
+        "title": "Brand Launch Film",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Cinematic brand introduction",
+        "duration": "3:15",
+        "category": "Commercial"
+      },
+      {
+        "id": "c3",
+        "title": "Documentary: Makers",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Artisan craftsmanship story",
+        "duration": "6:48",
+        "category": "Lifestyle"
+      },
+      {
+        "id": "c4",
+        "title": "Tech Product Film",
+        "youtubeId": "dQw4w9WgXcQ",
+        "description": "Premium product showcase",
+        "duration": "2:45",
+        "category": "Commercial"
+      }
+    ]
+  },
+
+  "services": [
+    { "id": "s1", "title": "Cinematic Filmmaking", "description": "Full-service film production from concept to delivery. We craft visual stories that resonate and inspire.", "icon": "Film" },
+    { "id": "s2", "title": "Event Coverage", "description": "Comprehensive event documentation with multi-camera setups. Capture every moment that matters.", "icon": "Calendar" },
+    { "id": "s3", "title": "Social Media Content", "description": "Platform-optimized short-form content that drives engagement. Reels, stories, and viral-ready videos.", "icon": "Smartphone" },
+    { "id": "s4", "title": "Corporate Productions", "description": "Professional corporate videos, training content, and internal communications that elevate your brand.", "icon": "Briefcase" },
+    { "id": "s5", "title": "Brand Films", "description": "Authentic storytelling that captures your brand's essence. Strategic narratives that connect with audiences.", "icon": "Heart" },
+    { "id": "s6", "title": "Commercials & Ads", "description": "High-impact advertising content for digital and broadcast. Creative concepts that convert viewers to customers.", "icon": "Video" }
+  ],
+
+  "stats": [
+    { "value": "250", "suffix": "+", "label": "Projects" },
+    { "value": "150", "suffix": "+", "label": "Brands" },
+    { "value": "12", "suffix": "M+", "label": "Views" },
+    { "value": "10", "suffix": "+", "label": "Years" }
+  ],
+
+  "about": {
+    "heading": "Where Vision Meets Execution",
+    "paragraphs": [
+      "Founded in 2016, Framecraft Studios emerged from a simple belief: every brand, event, and moment deserves to be captured with intention and artistry. What started as a two-person operation has grown into a full-service production studio trusted by global brands and local visionaries alike.",
+      "We're not just camera operators—we're storytellers, strategists, and visual architects. Our team combines technical precision with creative intuition, ensuring every frame serves a purpose. From pre-production planning to final color grading, we obsess over the details that transform good content into unforgettable experiences.",
+      "Based in Los Angeles with a network spanning three continents, we've produced everything from intimate brand documentaries to large-scale event coverage. Our work has been featured in international campaigns, earned industry recognition, and most importantly, helped our clients connect with their audiences in meaningful ways."
+    ],
+    "images": [
+      { "src": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=600", "alt": "Behind the scenes 1" },
+      { "src": "https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=600", "alt": "Behind the scenes 2" },
+      { "src": "https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?auto=compress&cs=tinysrgb&w=600", "alt": "Behind the scenes 3" },
+      { "src": "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=600", "alt": "Behind the scenes 4" }
+    ],
+    "process": [
+      { "step": 1, "title": "Discover", "description": "We dive deep into your vision, audience, and goals. Strategic planning ensures every creative decision aligns with your objectives." },
+      { "step": 2, "title": "Strategy", "description": "Concept development, scriptwriting, and storyboarding. We map out every detail before cameras roll." },
+      { "step": 3, "title": "Create", "description": "Production day. Our crew executes with precision, capturing footage that exceeds expectations." },
+      { "step": 4, "title": "Deliver", "description": "Post-production magic. Editing, color grading, sound design, and final delivery in all required formats." }
+    ]
+  },
+
+  "testimonials": [
+    { "id": "t1", "quote": "Framecraft transformed our brand launch into a visual masterpiece. Their attention to detail and creative vision exceeded every expectation. The final film didn't just showcase our product—it told our story in a way that truly resonated with our audience.", "name": "Sarah Mitchell", "context": "Tech Brand Launch", "stars": 5 },
+    { "id": "t2", "quote": "We've worked with numerous production companies, but Framecraft stands apart. Their professionalism, creativity, and ability to capture authentic moments made our annual conference coverage truly exceptional. The highlight reel generated more engagement than any previous year.", "name": "David Chen", "context": "Corporate Event", "stars": 5 },
+    { "id": "t3", "quote": "From our first consultation to final delivery, the team was phenomenal. They understood our aesthetic immediately and delivered content that perfectly captured our brand's essence. Our social engagement increased 340% after launching their content.", "name": "Priya Sharma", "context": "Lifestyle Brand Campaign", "stars": 5 },
+    { "id": "t4", "quote": "Simply the best in the business. Framecraft brought our commercial vision to life with stunning cinematography and flawless execution. The ROI on our campaign exceeded projections, and we credit much of that success to their brilliant creative work.", "name": "Marcus Johnson", "context": "National Commercial", "stars": 5 }
+  ]
+}
