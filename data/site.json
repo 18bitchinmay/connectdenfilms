@@ -3,16 +3,16 @@
     "name": "Connect Den Films",
     "tagline": "Transforming moments into timeless visual stories",
     "headline": "Connectden Films",
-    "subheading": " We create what captivates.",
+    "subheading": "Keep Connecting, Keep Celebrating.",
     "logo": "/cdflogo.png",
     "email": "connectdenfilms@gmail.com",
-    "phone": "+1 (555) 123-4567",
+    "phone": "+91 8999194841",
     "address": "142 Creative District, Los Angeles, CA 90028",
     "primaryColor": "#a6171c",
     "hoverColor": "#8a1317",
     "officeHours": {
-      "weekdays": "Monday–Friday: 9:00 AM – 6:00 PM",
-      "saturday": "Saturday: 10:00 AM – 4:00 PM",
+      "weekdays": "Monday–Friday: 10:00 AM – 7:00 PM",
+      "saturday": "Saturday: 10:00 AM – 7:00 PM",
       "sunday": "Sunday: Closed"
     },
     "social": {
@@ -45,32 +45,44 @@
     "photos": {
       "categories": [
         {
-          "slug": "commercial",
-          "name": "Commercial",
-          "coverImage": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "slug": "Malls",
+          "name": "Malls",
+          "coverImage": "/images/photos/mallcover.JPEG",
           "images": [
             {
-              "src": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/mall1.JPEG",
               "alt": "Commercial shoot setup"
             },
             {
-              "src": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/mall2.jpg",
               "alt": "Product photography"
             },
             {
-              "src": "https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/malls3.jpeg",
               "alt": "Brand shoot"
             },
             {
-              "src": "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/malls4.JPEG",
               "alt": "Studio lighting"
             },
             {
-              "src": "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/mall5.jpg",
               "alt": "Professional camera gear"
             },
             {
-              "src": "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/malls6.JPEG",
+              "alt": "Cinema camera"
+            },
+            {
+              "src": "/images/photos/mall7.jpg",
+              "alt": "Cinema camera"
+            },
+            {
+              "src": "/images/photos/mall8.JPEG",
+              "alt": "Cinema camera"
+            },
+            {
+              "src": "/images/photos/mall9.JPEG",
               "alt": "Cinema camera"
             }
           ]
@@ -78,33 +90,49 @@
         {
           "slug": "events",
           "name": "Events",
-          "coverImage": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "coverImage": "/images/photos/eventscover.jpeg",
           "images": [
             {
-              "src": "https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/events3.jpeg",
               "alt": "Concert event"
             },
             {
-              "src": "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/event4.jpeg",
               "alt": "Live performance"
             },
             {
-              "src": "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/events5.jpeg",
               "alt": "Conference stage"
             },
             {
-              "src": "https://images.pexels.com/photos/2306281/pexels-photo-2306281.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/events4.jpeg",
               "alt": "Corporate event"
             },
             {
-              "src": "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/events2.jpeg",
+              "alt": "Festival crowd"
+            },
+            {
+              "src": "/images/photos/event5.jpeg",
+              "alt": "Festival crowd"
+            },
+            {
+              "src": "/images/photos/events1.jpeg",
+              "alt": "Festival crowd"
+            },
+            {
+              "src": "/images/photos/event6.jpeg",
+              "alt": "Festival crowd"
+            },
+            {
+              "src": "/images/photos/events9.jpeg",
               "alt": "Festival crowd"
             }
           ]
         },
         {
-          "slug": "lifestyle",
-          "name": "Lifestyle",
+          "slug": "Sports",
+          "name": "Sports",
           "coverImage": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800",
           "images": [
             {
@@ -134,8 +162,8 @@
           ]
         },
         {
-          "slug": "production",
-          "name": "Production",
+          "slug": "corporate",
+          "name": "Corporate",
           "coverImage": "https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=800",
           "images": [
             {
@@ -165,77 +193,93 @@
     "reels": [
       {
         "id": "r1",
-        "title": "Urban Energy",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Fast-paced city lifestyle reel",
+        "title": "Laviva Virar",
+        "youtubeId": "2ak6RZ_LY3E",
+        "description": "Laviva Virar",
         "category": "Lifestyle"
       },
       {
         "id": "r2",
-        "title": "Product Showcase",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Sleek product reveal",
-        "category": "Commercial"
+        "title": "Splash n Play",
+        "youtubeId": "VkRP9K6JGLE",
+        "description": "Splash n Play Viviana mall",
+        "category": "Event"
       },
       {
         "id": "r3",
-        "title": "Event Highlights",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Dynamic event coverage",
-        "category": "Events"
-      },
-      {
-        "id": "r4",
-        "title": "Brand Story",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Authentic brand narrative",
+        "title": "DC Club ",
+        "youtubeId": "mwTtLjVMKW4",
+        "description": "DC Club Vasai",
         "category": "Commercial"
       },
       {
+        "id": "r4",
+        "title": "Shopping",
+        "youtubeId": "voXzLRYRC18",
+        "description": "Viviana Mall",
+        "category": "Lifestyle"
+      },
+      {
         "id": "r5",
-        "title": "Creative Process",
-        "youtubeId": "dQw4w9WgXcQ",
+        "title": "BTS T20 Mumbai",
+        "youtubeId": "78P-wjZrXh0",
         "description": "Behind the scenes creative",
         "category": "Production"
       },
       {
         "id": "r6",
-        "title": "Motion Graphics",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Animated brand elements",
-        "category": "Commercial"
+        "title": "Lakeshore Blossom",
+        "youtubeId": "iU8tvK-wnkM",
+        "description": "Lakeshore Blossom Event",
+        "category": "Event"
       }
     ],
     "cinematics": [
       {
         "id": "c1",
-        "title": "Innovation Summit 2025",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Full event coverage and highlights",
+        "title": "50 Years Anniversary Wankhede",
+        "youtubeId": "KZdjgdl7gTE",
+        "description": "50 years of Wankhede Stadium",
         "duration": "4:32",
         "category": "Events"
       },
       {
         "id": "c2",
-        "title": "Brand Launch Film",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Cinematic brand introduction",
+        "title": "Capital Mall Cinematic video",
+        "youtubeId": "Ou0ZYh7SBG8",
+        "description": "Capital Mall Cinematic video",
         "duration": "3:15",
-        "category": "Commercial"
+        "category": "Events"
       },
       {
         "id": "c3",
-        "title": "Documentary: Makers",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Artisan craftsmanship story",
+        "title": "PVR Cinematic",
+        "youtubeId": "V_9rId17Nf0",
+        "description": "PVR Cinematic",
         "duration": "6:48",
         "category": "Lifestyle"
       },
       {
         "id": "c4",
-        "title": "Tech Product Film",
-        "youtubeId": "dQw4w9WgXcQ",
-        "description": "Premium product showcase",
+        "title": "Vasai kala Krida",
+        "youtubeId": "kHankheeBOc",
+        "description": "35 Years of Vasai kala Krida Mahotsav",
+        "duration": "2:45",
+        "category": "Commercial"
+      },
+      {
+        "id": "c5",
+        "title": "Candour London",
+        "youtubeId": "r96OrVJYsfQ",
+        "description": "Candour London Factory",
+        "duration": "2:45",
+        "category": "Commercial"
+      },
+      {
+        "id": "c6",
+        "title": "Holi Milan",
+        "youtubeId": "0lNst53BI1M",
+        "description": "Holi Milan virar 2024",
         "duration": "2:45",
         "category": "Commercial"
       }
