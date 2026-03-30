@@ -124,9 +124,11 @@ export default function CinematicsCarousel() {
             }}
           >
             {cinematics.map((cinematic, index) => {
-              const offset = index - activeIndex;
+              let offset = index - activeIndex;
+              if (offset > cinematics.length / 2) offset -= cinematics.length;
+              if (offset < -cinematics.length / 2) offset += cinematics.length;
+              
               const isActive = index === activeIndex;
-              const isAdjacent = Math.abs(offset) === 1;
               const isVisible = Math.abs(offset) <= 1;
 
               return (

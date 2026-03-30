@@ -1,0 +1,18 @@
+﻿
+C:\Users\chinmay kumbhar\OneDrive\Desktop\Connectden films\connectdenfilms\src\components\AboutSection.tsx
+  122:48  error  'index' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\chinmay kumbhar\OneDrive\Desktop\Connectden films\connectdenfilms\src\components\CinematicsCarousel.tsx
+  129:21  error  'isAdjacent' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\chinmay kumbhar\OneDrive\Desktop\Connectden films\connectdenfilms\src\components\ReelsCarousel.tsx
+  129:21  error  'isAdjacent' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\chinmay kumbhar\OneDrive\Desktop\Connectden films\connectdenfilms\src\components\ScrollStack.tsx
+  15:65  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\chinmay kumbhar\OneDrive\Desktop\Connectden films\connectdenfilms\src\main.tsx
+  1:22  error  'useEffect' is defined but never used  @typescript-eslint/no-unused-vars
+
+Γ£û 5 problems (5 errors, 0 warnings)
+

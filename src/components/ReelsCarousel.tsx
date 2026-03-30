@@ -124,9 +124,11 @@ export default function ReelsCarousel() {
             }}
           >
             {reels.map((reel, index) => {
-              const offset = index - activeIndex;
+              let offset = index - activeIndex;
+              if (offset > reels.length / 2) offset -= reels.length;
+              if (offset < -reels.length / 2) offset += reels.length;
+              
               const isActive = index === activeIndex;
-              const isAdjacent = Math.abs(offset) === 1;
               const isVisible = Math.abs(offset) <= 1;
 
               return (

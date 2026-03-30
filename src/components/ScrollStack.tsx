@@ -12,6 +12,7 @@ export default function ScrollStack({ children, className = "" }: ScrollStackPro
     <div className={`relative w-full flex flex-col ${className}`}>
       {childrenArray.map((child, index) => {
         if (React.isValidElement(child)) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           return React.cloneElement(child as React.ReactElement<any>, {
             style: {
               ...(child.props.style || {}),

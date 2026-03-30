@@ -119,7 +119,7 @@ export default function AboutSection() {
               }}
               className="hidden md:block"
             />
-            {siteData.about.process.map((step, index) => (
+            {siteData.about.process.map((step) => (
               <div
                 key={step.step}
                 style={{
