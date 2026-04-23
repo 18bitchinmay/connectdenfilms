@@ -78,12 +78,37 @@ export default function ReelsCarousel() {
       <section
         style={{
           padding: '120px 24px',
-          background: 'var(--bg-subtle)',
           position: 'relative',
           overflow: 'hidden',
         }}
       >
-        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
+        {/* Blurred dynamic background — updates automatically with activeIndex */}
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundImage: `url(${ytThumb(reels[activeIndex].youtubeId)})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'blur(40px)',
+            transform: 'scale(1.15)',
+            transition: 'background-image 0.5s ease',
+            zIndex: 0,
+          }}
+        />
+
+        {/* Dark overlay so text stays readable */}
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'rgba(0, 0, 0, 0.45)',
+            zIndex: 1,
+          }}
+        />
+
+        {/* All content sits above the background layers */}
+        <div style={{ maxWidth: '1400px', margin: '0 auto', position: 'relative', zIndex: 2 }}>
           <div style={{ marginBottom: '64px', textAlign: 'center' }}>
             <h2 style={{ marginBottom: '16px', color: 'var(--accent)' }}>
               Reels
@@ -92,14 +117,14 @@ export default function ReelsCarousel() {
               style={{
                 fontSize: '20px',
                 fontWeight: 600,
-                color: '#000000',
+                color: '#FFFFFF',
                 fontFamily: 'Montserrat, sans-serif',
                 margin: '0 0 16px',
               }}
             >
               Short Form Video Content
             </p>
-            <p style={{ fontSize: '16px', color: 'var(--text-faint)', margin: 0 }}>
+            <p style={{ fontSize: '16px', color: 'rgba(255, 255, 255, 0.65)', margin: 0 }}>
               Dynamic vertical videos optimized for social platforms
             </p>
           </div>
@@ -127,7 +152,7 @@ export default function ReelsCarousel() {
               let offset = index - activeIndex;
               if (offset > reels.length / 2) offset -= reels.length;
               if (offset < -reels.length / 2) offset += reels.length;
-              
+
               const isActive = index === activeIndex;
               const isVisible = Math.abs(offset) <= 1;
 

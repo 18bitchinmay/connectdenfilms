@@ -54,37 +54,32 @@ export default function AboutSection() {
 
           <div
             style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: '16px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '24px',
             }}
           >
-            {siteData.about.images.map((image, index) => (
-              <div
-                key={index}
+            <div
+              style={{
+                width: '100%',
+                maxWidth: '450px',
+                opacity: 0,
+                animation: 'fadeSlideUp 0.6s ease forwards 0.2s',
+              }}
+              className="scroll-reveal"
+            >
+              <img
+                src="/hero/cdflogo.png"
+                alt="Connect Den Films Logo"
                 style={{
-                  borderRadius: '12px',
-                  overflow: 'hidden',
-                  aspectRatio: '4/5',
-                  opacity: 0,
-                  animation: `fadeSlideUp 0.6s ease forwards ${index * 0.1}s`,
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0 12px 40px rgba(0, 0, 0, 0.15))',
                 }}
-                className="scroll-reveal"
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                    transition: 'transform 0.3s ease',
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.transform = 'scale(1.05)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')}
-                />
-              </div>
-            ))}
+              />
+            </div>
           </div>
         </div>
 

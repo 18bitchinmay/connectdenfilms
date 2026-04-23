@@ -10,7 +10,7 @@
   --text-muted: #333333;
   --text-faint: #666666;
   --border: #b8b2a7;
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 4px 20px rgba(11, 1, 1, 0.08);
   --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
   --shadow-modal: 0 32px 80px rgba(0, 0, 0, 0.3);
 }
@@ -31,7 +31,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.2;
   font-weight: 700;
@@ -75,6 +80,7 @@ img {
     opacity: 0;
     transform: translateY(24px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -85,6 +91,7 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -95,6 +102,7 @@ img {
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -102,9 +110,19 @@ img {
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-8px); }
-  75% { transform: translateX(8px); }
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-8px);
+  }
+
+  75% {
+    transform: translateX(8px);
+  }
 }
 
 .scroll-reveal {

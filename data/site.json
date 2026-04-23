@@ -16,8 +16,8 @@
       "sunday": "Sunday: Closed"
     },
     "social": {
-      "instagram": "https://instagram.com/framecraft",
-      "youtube": "https://youtube.com/@framecraft",
+      "instagram": "https://instagram.com/connectdenfilms",
+      "youtube": "https://youtube.com/@connectdenfilms",
       "whatsapp": "",
       "facebook": ""
     },
@@ -133,58 +133,74 @@
         {
           "slug": "Sports",
           "name": "Sports",
-          "coverImage": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "coverImage": "/images/photos/sportscover.JPEG",
           "images": [
             {
-              "src": "https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/sports1.JPEG",
               "alt": "Lifestyle portrait"
             },
             {
-              "src": "https://images.pexels.com/photos/1262304/pexels-photo-1262304.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/sports2.JPEG",
               "alt": "Urban lifestyle"
             },
             {
-              "src": "https://images.pexels.com/photos/1139743/pexels-photo-1139743.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/sports3.JPEG",
               "alt": "Outdoor lifestyle"
             },
             {
-              "src": "https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/sports4.JPEG",
               "alt": "Fashion lifestyle"
             },
             {
-              "src": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/sports5.JPEG",
               "alt": "Creative portrait"
             },
             {
-              "src": "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/sports6.JPEG",
               "alt": "Editorial shoot"
+            },
+             {
+              "src": "/images/photos/sports7.JPEG",
+              "alt": "Creative portrait"
+            },
+             {
+              "src": "/images/photos/sports8.JPEG",
+              "alt": "Creative portrait"
+            },
+             {
+              "src": "/images/photos/sports9.JPEG",
+              "alt": "Creative portrait"
             }
           ]
         },
         {
           "slug": "corporate",
           "name": "Corporate",
-          "coverImage": "https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=800",
+          "coverImage": "/images/photos/corporatecover.jpg",
           "images": [
             {
-              "src": "https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/corporate1.jpg",
               "alt": "Film production set"
             },
             {
-              "src": "https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/corporate2.jpg",
               "alt": "Behind the scenes"
             },
             {
-              "src": "https://images.pexels.com/photos/7991158/pexels-photo-7991158.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/corporate3.jpg",
               "alt": "Camera operator"
             },
             {
-              "src": "https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/corporate4.jpg",
               "alt": "Film crew"
             },
             {
-              "src": "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1200",
+              "src": "/images/photos/corporate5.jpg",
               "alt": "Studio production"
+            },
+             {
+              "src": "/images/photos/corporate6.jpg",
+              "alt": "Film crew"
             }
           ]
         }
@@ -348,9 +364,10 @@
   "about": {
     "heading": "Where Vision Meets Execution",
     "paragraphs": [
-      "Founded in 2016, Framecraft Studios emerged from a simple belief: every brand, event, and moment deserves to be captured with intention and artistry. What started as a two-person operation has grown into a full-service production studio trusted by global brands and local visionaries alike.",
-      "We're not just camera operators—we're storytellers, strategists, and visual architects. Our team combines technical precision with creative intuition, ensuring every frame serves a purpose. From pre-production planning to final color grading, we obsess over the details that transform good content into unforgettable experiences.",
-      "Based in Los Angeles with a network spanning three continents, we've produced everything from intimate brand documentaries to large-scale event coverage. Our work has been featured in international campaigns, earned industry recognition, and most importantly, helped our clients connect with their audiences in meaningful ways."
+      "ConnectDen Films is a Mumbai-based creative production company delivering high-impact visual storytelling across India. We specialize in crafting compelling narratives that bridge brands with their audiences through cinematic excellence, strategic thinking, and innovative execution.",
+      "Operating pan-India, ConnectDen Films partners with businesses, creators, and agencies to produce a wide spectrum of content—including brand films, commercials, corporate videos, digital campaigns, and social media content. Our approach is rooted in understanding each client’s vision and translating it into visually engaging, purpose-driven content that delivers measurable impact.",
+      "At ConnectDen Films, we combine creative agility with production precision. From ideation and scripting to filming and post-production, our team ensures seamless project execution with a strong focus on quality, timelines, and brand alignment.",
+      "We don’t just create videos—we craft powerful visual experiences through both film and photography that connect, engage, and convert."
     ],
     "images": [
       {
