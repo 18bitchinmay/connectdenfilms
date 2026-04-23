@@ -2,7 +2,7 @@
   "company": {
     "name": "Connect Den Films",
     "tagline": "Transforming moments into timeless visual stories",
-    "headline": "Connectden Films",
+    "headline": "Connect Den Films",
     "subheading": "Keep Connecting, Keep Celebrating.",
     "logo": "/cdflogo.png",
     "email": "connectdenfilms@gmail.com",
@@ -18,8 +18,9 @@
     "social": {
       "instagram": "https://instagram.com/connectdenfilms",
       "youtube": "https://youtube.com/@connectdenfilms",
-      "whatsapp": "",
-      "facebook": ""
+      "whatsapp": "#",
+      "facebook": "#",
+      "linkedin": "#"
     },
     "nav": [
       "Home",
@@ -33,13 +34,13 @@
   "hero": {
     "ctaPrimary": {
       "label": "View Our Work",
-      "href": "#portfolio"
+      "href": "#work"
     },
     "ctaSecondary": {
       "label": "Get In Touch",
       "href": "#contact"
     },
-    "backgroundYouTubeId": "iiiDblVsIIs"
+    "backgroundYouTubeId": "Ou0ZYh7SBG8"
   },
   "portfolio": {
     "photos": {

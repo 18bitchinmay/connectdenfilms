@@ -42,9 +42,9 @@ export default function Testimonials() {
         <div
           style={{
             display: 'flex',
-            gap: '20px',
+            gap: '24px',
             overflowX: 'auto',
-            paddingBottom: '16px',
+            padding: '24px 8px 48px 8px',
           }}
           className="no-scrollbar"
         >
@@ -55,12 +55,22 @@ export default function Testimonials() {
                 minWidth: '320px',
                 maxWidth: '400px',
                 background: '#FFFFFF',
+                border: '1px solid #EAEAEC',
                 borderRadius: '16px',
                 padding: '32px',
-                boxShadow: 'var(--shadow-card)',
+                boxShadow: '0 12px 32px rgba(0, 0, 0, 0.12)',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '20px',
+                transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-8px)';
+                e.currentTarget.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.18)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 12px 32px rgba(0, 0, 0, 0.12)';
               }}
             >
               <div style={{ display: 'flex', gap: '4px' }}>

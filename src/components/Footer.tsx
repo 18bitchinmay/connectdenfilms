@@ -1,12 +1,13 @@
-import { Instagram, Youtube, MessageCircle, Facebook, Mail, Phone } from 'lucide-react';
+import { Instagram, Youtube, MessageCircle, Facebook, Mail, Phone, Linkedin } from 'lucide-react';
 import siteData from '../../data/site.json';
 
 export default function Footer() {
   const socialIcons = [
-    { icon: Instagram, url: siteData.company.social.instagram, label: 'Instagram' },
-    { icon: Youtube, url: siteData.company.social.youtube, label: 'YouTube' },
-    { icon: MessageCircle, url: siteData.company.social.whatsapp, label: 'WhatsApp' },
-    { icon: Facebook, url: siteData.company.social.facebook, label: 'Facebook' },
+    { icon: Instagram, url: siteData.company.social.instagram, label: 'Instagram', hoverColor: '#E1306C' },
+    { icon: Youtube, url: siteData.company.social.youtube, label: 'YouTube', hoverColor: '#FF0000' },
+    { icon: MessageCircle, url: siteData.company.social.whatsapp, label: 'WhatsApp', hoverColor: '#25D366' },
+    { icon: Facebook, url: siteData.company.social.facebook, label: 'Facebook', hoverColor: '#1877F2' },
+    { icon: Linkedin, url: (siteData.company.social as any).linkedin, label: 'LinkedIn', hoverColor: '#0A66C2' },
   ];
 
   return (
@@ -48,7 +49,7 @@ export default function Footer() {
               {siteData.company.tagline}
             </p>
             <div style={{ display: 'flex', gap: '12px' }}>
-              {socialIcons.map(({ icon: Icon, url, label }) => {
+              {socialIcons.map(({ icon: Icon, url, label, hoverColor }) => {
                 if (!url) return null;
                 return (
                   <a
@@ -69,7 +70,7 @@ export default function Footer() {
                       color: '#FFFFFF',
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = 'var(--accent)';
+                      e.currentTarget.style.background = hoverColor;
                       e.currentTarget.style.transform = 'translateY(-3px)';
                     }}
                     onMouseLeave={(e) => {

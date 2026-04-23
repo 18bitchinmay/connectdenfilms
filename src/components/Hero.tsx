@@ -64,31 +64,16 @@ export default function Hero() {
           padding: '0 24px',
         }}
       >
-        <div
-          style={{
-            marginBottom: '24px',
-            opacity: 0,
-            animation: 'fadeSlideUp 0.8s ease forwards',
-          }}
-        >
-          <p
-            style={{
-              fontSize: '13px',
-              fontWeight: 600,
-              letterSpacing: '0.15em',
-              textTransform: 'uppercase',
-              color: 'var(--accent)',
-              marginBottom: '8px',
-            }}
-          >
-            {siteData.company.tagline}
-          </p>
-        </div>
+
 
         <h1
           style={{
+            fontFamily: '"Bebas Neue", sans-serif',
+            fontSize: 'clamp(64px, 12vw, 130px)',
+            letterSpacing: '0.04em',
+            lineHeight: '0.95',
             color: textColor,
-            marginBottom: '24px',
+            marginBottom: '32px',
             opacity: 0,
             animation: 'fadeSlideUp 0.8s ease forwards 0.15s',
           }}

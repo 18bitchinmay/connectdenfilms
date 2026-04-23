@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: #d6d0c5;
-  --bg-subtle: #c8c2b7;
+  --bg-primary: #ffffff;
+  --bg-subtle: #ffffff;
   --bg-dark: #0A0A0A;
   --text-primary: #000000;
   --text-muted: #333333;
   --text-faint: #666666;
-  --border: #b8b2a7;
+  --border: #ffffff;
   --shadow-card: 0 4px 20px rgba(11, 1, 1, 0.08);
   --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.15);
   --shadow-modal: 0 32px 80px rgba(0, 0, 0, 0.3);
