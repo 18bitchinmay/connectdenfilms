@@ -100,14 +100,14 @@ export default function ServicesGrid() {
                 image={service.image}
                 overlayOpacity={0.6}
               >
-                <div className="flex flex-col items-center text-center p-12 md:p-20">
-                  <div className="mb-8" style={{ color: 'var(--accent)' }}>
+                <div className="flex flex-col items-center justify-center text-center py-10 px-6 md:p-20 min-h-[300px] md:min-h-[auto]">
+                  <div className="mb-4 md:mb-8 transform scale-75 md:scale-100 origin-bottom" style={{ color: 'var(--accent)' }}>
                     <IconComponent size={56} />
                   </div>
-                  <h3 className="text-3xl md:text-4xl font-semibold mb-6">
+                  <h3 className="text-2xl md:text-4xl font-semibold mb-3 md:mb-6">
                     {service.title}
                   </h3>
-                  <p className="text-gray-200 max-w-xl text-lg md:text-xl leading-relaxed">
+                  <p className="text-gray-200 text-base md:text-xl leading-relaxed max-w-xl">
                     {service.description}
                   </p>
                 </div>

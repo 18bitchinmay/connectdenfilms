@@ -104,7 +104,10 @@ export default function CategoryOverlay({ category, onClose }: CategoryOverlayPr
         <style>{`
           @media (max-width: 768px) {
             .photo-grid {
-              gap: 4px !important;
+              gap: 2px !important;
+              margin-left: -24px !important;
+              margin-right: -24px !important;
+              width: calc(100% + 48px) !important;
             }
           }
         `}</style>

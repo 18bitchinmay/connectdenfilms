@@ -40,18 +40,38 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        style={{
-          position: 'sticky',
-          top: 0,
-          zIndex: 1000,
-          background: scrolled ? 'rgba(255, 255, 255, 0.92)' : 'rgba(255, 255, 255, 0.98)',
-          backdropFilter: 'blur(12px)',
-          borderBottom: `1px solid ${scrolled ? 'var(--border)' : 'transparent'}`,
-          transition: 'all 0.3s ease',
-        }}
-      >
+      <style>{`
+        .navbar-container {
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          background: ${scrolled ? 'rgba(255, 255, 255, 0.92)' : 'rgba(255, 255, 255, 0.98)'};
+          backdrop-filter: blur(12px);
+          border-bottom: 1px solid ${scrolled ? 'var(--border)' : 'transparent'};
+          transition: all 0.3s ease;
+          width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+          .navbar-container {
+            position: fixed;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 32px);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: none;
+            border-radius: 100px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+          }
+        }
+      `}</style>
+
+      <nav className="navbar-container">
         <div
+          className="h-14 md:h-20"
           style={{
             maxWidth: '1400px',
             margin: '0 auto',
@@ -59,9 +79,9 @@ export default function Navbar() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            height: '80px',
           }}
         >
+          {/* Logo */}
           <a
             href="#home"
             onClick={(e) => {
@@ -72,26 +92,27 @@ export default function Navbar() {
               display: 'flex',
               alignItems: 'center',
               textDecoration: 'none',
+              gap: '12px'
             }}
           >
             <img
               src="/hero/cdflogo.png"
               alt={`${siteData.company.name} Logo`}
+              className="h-10 md:h-[76px]"
               style={{
-                height: '76px',
                 width: 'auto',
-                objectFit: 'contain'
+                objectFit: 'contain',
               }}
             />
           </a>
 
+          {/* Desktop Links (Restored to original parameters) */}
           <div
+            className="hidden md:flex"
             style={{
-              display: 'flex',
               gap: '40px',
               alignItems: 'center',
             }}
-            className="hidden md:flex"
           >
             {siteData.company.nav.map((item) => (
               <a
@@ -120,24 +141,24 @@ export default function Navbar() {
             ))}
           </div>
 
+          {/* Menu Button - Circular bordered icon */}
           <button
-            className="md:hidden"
+            className="flex items-center justify-center w-10 h-10 rounded-full transition-all cursor-pointer"
+            style={{ 
+              border: '1px solid rgba(0, 0, 0, 0.1)',
+              background: 'transparent',
+              color: '#000000',
+              marginRight: '-8px' // Slightly offset to balance against the extra padding given to the pill
+            }}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
-            style={{
-              width: '44px',
-              height: '44px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: 'var(--text-primary)',
-            }}
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}
           </button>
         </div>
       </nav>
 
+      {/* Full Screen Mobile Overlay */}
       {isOpen && (
         <div
           style={{

@@ -46,14 +46,13 @@ export default function PhotoSection() {
               </p>
             </div>
 
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                gap: '16px',
-              }}
-              className="sm:grid-cols-2 md:grid-cols-4"
-            >
+              <div
+                style={{
+                  display: 'grid',
+                  gap: '16px',
+                }}
+                className="grid-cols-2 md:grid-cols-4"
+              >
               {siteData.portfolio.photos.categories.map((category, index) => (
                 <div
                   key={category.slug}
@@ -115,9 +114,9 @@ export default function PhotoSection() {
                     }}
                   >
                     <h3
+                      className="text-lg md:text-[22px]"
                       style={{
                         color: '#FFFFFF',
-                        fontSize: '22px',
                         fontWeight: 700,
                         margin: 0,
                       }}
