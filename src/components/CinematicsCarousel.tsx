@@ -84,7 +84,7 @@ export default function CinematicsCarousel() {
         }}
       >
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
-          <div style={{ marginBottom: '64px', textAlign: 'center' }}>
+          <div className="mb-6 md:mb-16 text-center">
             <h2 style={{ marginBottom: '16px', color: 'var(--accent)' }}>
               Cinematics
             </h2>

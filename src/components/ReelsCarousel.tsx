@@ -168,14 +168,14 @@ export default function ReelsCarousel() {
                   }}
                   style={{
                     position: 'absolute',
-                    width: 'min(300px, 75vw)',
+                    width: 'min(300px, 60vw)',
                     aspectRatio: '9/16',
                     borderRadius: '18px',
                     overflow: 'hidden',
                     boxShadow: 'var(--shadow-card)',
                     transform: `translateX(${offset * 110}%) scale(${isActive ? 1 : 0.82})`,
                     opacity: isVisible ? (isActive ? 1 : 0.55) : 0,
-                    transition: 'all 0.45s cubic-bezier(0.34, 1.4, 0.64, 1)',
+                    transition: 'all 0.3s ease-out',
                     pointerEvents: isVisible ? 'auto' : 'none',
                     cursor: isActive ? 'pointer' : 'default',
                   }}

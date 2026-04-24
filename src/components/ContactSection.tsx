@@ -34,10 +34,12 @@ export default function ContactSection() {
 
   const inputStyle = (fieldName: string) => ({
     width: '100%',
-    padding: '14px 16px',
+    padding: '16px 20px',
     fontSize: '15px',
-    border: `2px solid ${errors[fieldName] ? '#DC2626' : 'var(--border)'}`,
-    borderRadius: '8px',
+    backgroundColor: '#FFFFFF',
+    border: `1px solid ${errors[fieldName] ? '#DC2626' : 'rgba(0,0,0,0.1)'}`,
+    borderRadius: '12px',
+    boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
     transition: 'all 0.22s ease',
     fontFamily: 'DM Sans, sans-serif',
     outline: 'none',
